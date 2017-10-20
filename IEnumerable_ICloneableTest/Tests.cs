@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace IEnumerable_ICloneableTest
 {
     [TestFixture]
-    public class Class1
+    public class Tests
     {
         [Test]
         public void Push1andCount()
@@ -95,5 +95,38 @@ namespace IEnumerable_ICloneableTest
             Assert.AreEqual(_mysteck.Contains(22), false);
         }
 
+        [Test]
+        public void Push1Clone()
+        {
+            MyStack<int> _mysteck = new MyStack<int>();
+            _mysteck.Push(1);
+            MyStack<int> _mysteck2 = (MyStack<int>)_mysteck.Clone();
+
+            Assert.AreEqual(_mysteck.Peek(), _mysteck2.Peek());
+        }
+        [Test]
+        public void Push2PopClone()
+        {
+            MyStack<int> _mysteck = new MyStack<int>();
+            _mysteck.Push(1);
+            _mysteck.Push(2);
+            _mysteck.Pop();
+            MyStack<int> _mysteck2 = (MyStack<int>)_mysteck.Clone();
+
+            Assert.AreEqual(_mysteck2.Peek(), 1);
+        }
+        
+        [Test]
+        public void Push2Count()
+        {
+            MyStack<int> _mysteck = new MyStack<int>();
+            _mysteck.Push(1);
+            _mysteck.Push(2);
+            _mysteck.Push(3);
+            _mysteck.Push(4);
+            MyStack<int> _mysteck2 = (MyStack<int>)_mysteck.Clone();
+
+            Assert.AreEqual(_mysteck.Count(), _mysteck2.Count());
+        }
     }
 }
