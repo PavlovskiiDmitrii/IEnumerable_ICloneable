@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerable_ICloneable", "IEnumerable_ICloneable\IEnumerable_ICloneable.csproj", "{FEBE8FB2-6BD2-4459-92B3-5DE602FA33E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerable_ICloneableTest", "IEnumerable_ICloneableTest\IEnumerable_ICloneableTest.csproj", "{AEA8B3C5-0ACF-44D0-9336-ACD07FEED8DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FEBE8FB2-6BD2-4459-92B3-5DE602FA33E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEBE8FB2-6BD2-4459-92B3-5DE602FA33E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEBE8FB2-6BD2-4459-92B3-5DE602FA33E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA8B3C5-0ACF-44D0-9336-ACD07FEED8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA8B3C5-0ACF-44D0-9336-ACD07FEED8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA8B3C5-0ACF-44D0-9336-ACD07FEED8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA8B3C5-0ACF-44D0-9336-ACD07FEED8DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
